@@ -1,272 +1,262 @@
 <!-- Codigo reutilizable -->
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="{{ url_for('static', filename='css/main.css')}}"
-    />
-    <title>Document</title>
-  </head>
 
-  <body>
-    <!--           Inicio   Navegacion          -->
-    <div id="home" class="">
-      <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <div class="container-fluid">
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mx-auto">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Service</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-              </li>
-            </ul>
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css')}}" />
+  <title>Document</title>
+</head>
+
+<body data-spy="scroll" data-bs-target="#navbarResponsive">
+  <!--           Inicio   Navegacion          -->
+  <div id="home" class="">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#service">Service</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
         </div>
-      </nav>
-
-      <!--           Fin   Navegacion          -->
-      <!--           Inicio del fondo          -->
-      <div class="background">
-        <img
-          class="img-fluid"
-          style="width: 100%; height: 50%"
-          src="{{url_for('static',filename='img/01.jpg')}}"
-          alt=""
-        />
       </div>
-      <div class="heading-content text-center">
-        <h5>Hello, I'm</h5>
-        <h1>Abel Correa</h1>
-        <p>AND THIS IS MY WORLD</p>
-      </div>
+    </nav>
 
-      <!--           Fin del fondo             -->
+    <!--           Fin   Navegacion          -->
+    <!--           Inicio del fondo          -->
+    <div class="background">
+      <img class="img-fluid" style="width: 100%; height: 50%" src="{{url_for('static',filename='img/perfil.jpg')}}"
+        alt="" />
+    </div>
+    <div class="heading-content text-center">
+      <h5>Hello, I'm</h5>
+      <h1>Abel Correa</h1>
+      <p>I'M FRONT END DEVELOPER LIVING IN ARGENTINA</p>
     </div>
 
-    <!--             Inicio About              -->
-    <div id="about" class="container mt-5 mb-5">
-      <div class="post-heading text-center">
-        <h3 class="display-4 font-weight-bolt">About Me</h3>
-        <hr class="w-50 mx-auto" />
-      </div>
-      <div class="row mt-5">
-        <div class="col-lg-6 col-md-6 col-12">
-          <img
-            class="img-fluid"
-            src="{{url_for('static',filename='img/cv.jpg')}}"
-            alt=""
-          />
-        </div>
-        <div class="col-lg-6 col-md-6 col-12">
-          <h2>Wanna Know Me?</h2>
-          <hr />
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
-            soluta consectetur hic iste, quis ratione, quam obcaecati magni,
-            distinctio reprehenderit consequatur vero illo quas exercitationem
-            error quia? Illum maiores, laudantium quis reiciendis itaque
-            corrupti velit excepturi minima mollitia perspiciatis error
-            molestias ipsa vel neque voluptate possimus facilis eos dolorum
-            saepe.
-          </p>
-          <button class="btn w-50">
-            <a href="#">Know More</a>
-          </button>
-        </div>
-      </div>
-    </div>
-    <!--             Fin About                 -->
+    <!--           Fin del fondo             -->
+  </div>
 
-    <!--             Inicio Service              -->
-    <div id="service" class="container mt-5 mb-5">
-      <div class="post-heading text-center">
-        <h3 class="display-4 font-weight-bolt">Service</h3>
-        <hr class="w-50 mx-auto" />
+  <!--             Inicio About              -->
+  <div id="about" class="offset container">
+    <div class="post-heading text-center">
+      <h3 class="display-4 font-weight-bolt">About Me</h3>
+      <hr class="w-50 mx-auto" />
+    </div>
+    <div class="row mt-3">
+      <div class="col-lg-6 col-md-6 col-12 pb-4">
+        <img class="img-fluid" src="{{url_for('static',filename='img/perfil2.jpg')}}" alt="" />
       </div>
-      <div class="row">
-        <div class="col-lg-4 col-md-6 col-12 pb-5">
-          <div class="card">
-            <img
-              src="{{url_for('static',filename='img/service1.png')}}"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Buisness Website</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <a href="#" class="btn btn-dark">Go somewhere</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 col-12 pb-5">
-          <div class="card">
-            <img
-              src="{{url_for('static',filename='img/service2.png')}}"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Buisness Website</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <a href="#" class="btn btn-dark">Go somewhere</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 col-12 pb-5">
-          <div class="card">
-            <img
-              src="{{url_for('static',filename='img/service3.png')}}"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Buisness Website</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <a href="#" class="btn btn-dark">Go somewhere</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 col-12 pb-5">
-          <div class="card">
-            <img
-              src="{{url_for('static',filename='img/service4.png')}}"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Buisness Website</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <a href="#" class="btn btn-dark">Go somewhere</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 col-12 pb-5">
-          <div class="card">
-            <img
-              src="{{url_for('static',filename='img/service5.png')}}"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Buisness Website</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <a href="#" class="btn btn-dark">Go somewhere</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 col-12 pb-5">
-          <div class="card">
-            <img
-              src="{{url_for('static',filename='img/service6.png')}}"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Buisness Website</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <a href="#" class="btn btn-dark">Go somewhere</a>
-            </div>
-          </div>
-        </div>
-        <button class="button w-50 mx-auto mb-5">
+      <div class="col-lg-6 col-md-6 col-12">
+        <h2>Wanna Know Me?</h2>
+        <hr />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
+          soluta consectetur hic iste, quis ratione, quam obcaecati magni,
+          distinctio reprehenderit consequatur vero illo quas exercitationem
+          error quia? Illum maiores, laudantium quis reiciendis itaque
+          corrupti velit excepturi minima mollitia perspiciatis error
+          molestias ipsa vel neque voluptate possimus facilis eos dolorum
+          saepe.
+        </p>
+        <button class="btn w-50">
           <a href="#">Know More</a>
         </button>
       </div>
     </div>
+  </div>
+  <!--             Fin About                 -->
 
-    <!--             Fin Service                 -->
-    <!--             Inicio Newsletter              -->
-    <section class="sec1 container-fluid mt-5 mb-5">
-      <h2 class="mt-5">Newsletter</h2>
-      <p>Suscribirse a Newsletter para recibir nuevas noticias</p>
-      <form class="form-inline mt-2" action="">
-        <input
-          type="email"
-          class="form-control"
-          id="email"
-          placeholder="Enter Email"/>
-
-        <button type="submit" class="btn btn-dark">Submit</button>
-      </form>
-    </section>
-
-    <!--             Fin Newsletter                 -->
-
-    <!--             Inicio Contact              -->
-    <div id="contact" class="container mt-5 mb-5">
-        <div class="post-heading text-center">
-            <h3 class="display-4 font-weight-bolt">Contact</h3>
-            <hr class="w-50 mx-auto" />
-          </div>
-          <form action="/action_page.php">
-            <div class="form-group">
-              <label for="email">Email address:</label>
-              <input type="email" class="form-control" placeholder="Enter email" id="email">
-            </div>
-            <div class="form-group">
-              <label for="pwd">Password:</label>
-              <input type="password" class="form-control" placeholder="Enter password" id="pwd">
-            </div>
-            <div class="form-group form-check">
-              <label class="form-check-label">
-                <input class="form-check-input" type="checkbox"> Remember me
-              </label>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </form>
+  <!--             Inicio Service              -->
+  <div id="service" class="offset container mt-5">
+    <div class="post-heading text-center">
+      <h3 class="display-4 font-weight-bolt">Service</h3>
+      <hr class="w-50 mx-auto" />
     </div>
-    <!--             Fin Contact                 -->
-    <!--             Inicio Footer                 -->
-    
-    <!--             Fin Footer                 -->
-  </body>
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
-    crossorigin="anonymous"
-  ></script>
+    <div class="row">
+      <div class="col-lg-4 col-md-6 col-12 pb-5">
+        <div class="card">
+          <img src="{{url_for('static',filename='img/service1.png')}}" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Buisness Website</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up
+              the bulk of the card's content.
+            </p>
+            <a href="#" class="btn btn-dark">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-12 pb-5">
+        <div class="card">
+          <img src="{{url_for('static',filename='img/service2.png')}}" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Buisness Website</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up
+              the bulk of the card's content.
+            </p>
+            <a href="#" class="btn btn-dark">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-12 pb-5">
+        <div class="card">
+          <img src="{{url_for('static',filename='img/service3.png')}}" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Buisness Website</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up
+              the bulk of the card's content.
+            </p>
+            <a href="#" class="btn btn-dark">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-12 pb-5">
+        <div class="card">
+          <img src="{{url_for('static',filename='img/service4.png')}}" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Buisness Website</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up
+              the bulk of the card's content.
+            </p>
+            <a href="#" class="btn btn-dark">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-12 pb-5">
+        <div class="card">
+          <img src="{{url_for('static',filename='img/service5.png')}}" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Buisness Website</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up
+              the bulk of the card's content.
+            </p>
+            <a href="#" class="btn btn-dark">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-12 pb-5">
+        <div class="card">
+          <img src="{{url_for('static',filename='img/service6.png')}}" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Buisness Website</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up
+              the bulk of the card's content.
+            </p>
+            <a href="#" class="btn btn-dark">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <button class="button w-50 mx-auto mb-5">
+        <a href="#">Know More</a>
+      </button>
+    </div>
+  </div>
+
+  <!--             Fin Service                 -->
+
+  <!--             Inicio Contact              -->
+  <div id="contact" class="offset container mb-5">
+    <div class="post-heading text-center">
+      <h3 class="display-4 font-weight-bolt">Contact</h3>
+      <hr class="w-50 mx-auto" />
+    </div>
+    <form action="/action_page.php">
+      <div class="form-group">
+        <label for="email">Email address:</label>
+        <input type="email" class="form-control" placeholder="Enter email" id="email" />
+      </div>
+      <div class="form-group">
+        <label for="pwd">Password:</label>
+        <input type="password" class="form-control" placeholder="Enter password" id="pwd" />
+      </div>
+      <div class="form-group form-check">
+        <label class="form-check-label">
+          <input class="form-check-input" type="checkbox" /> Remember me
+        </label>
+      </div>
+      <button type="submit" class="btn btn-primary mt-2">Submit</button>
+    </form>
+  </div>
+  <!--             Fin Contact                 -->
+  <!--             Inicio Footer                 -->
+  <!-- Footer -->
+  <footer class="page-footer font-small blue-grey lighten-5 bg-dark">
+    <div class="gb-dark">
+      <div class="container ">
+        <!-- Grid row-->
+        <div class="row py-4 d-flex align-items-center">
+          <!-- Grid column -->
+          <div class="col-md-6 col-lg-5 text-center text-md-left mb-2 mb-md-0">
+            <h4 class="mt-4 text-white">Contact me on social media!</h4>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-6 col-lg-7 text-center text-md-end">
+            <!--Linkedin -->
+            <a class="s-ico" href="https://www.linkedin.com/in/abeldionisiocorrea/">
+              <i class="fab fa-linkedin-in white-text fa-2x me-4"> </i>
+            </a>
+            <!-- Twitter -->
+            <a class="s-ico" href="https://twitter.com/AbelDionisioCo1">
+              <i class="fab fa-twitter-square white-text fa-2x me-4"> </i>
+            </a>
+            <!-- GitHub -->
+            <a class="s-ico" href="https://github.com/Abel075">
+              <i class="fab fa-github-square white-text fa-2x me-4"> </i>
+            </a>
+            <!-- Facebook -->
+            <a class="s-ico" href="https://www.facebook.com/Abel-Dionisio-Correa-104368995147397">
+              <i class="fab fa-facebook-square fa-2x me-4"></i>             
+            </a>
+                      
+            <!--Whatsapp-->
+            <a class="s-ico" href="https://wa.link/mo2li3">
+              <i class="fab fa-whatsapp fa-2x white-text"> </i>
+            </a>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row-->
+      </div>
+      <!-- Copyright -->
+      <div class="footer-copyright text-center text-white-50 py-3">
+        © 2021 Copyright:
+        <a class="dark-grey-text" href="https://mdbootstrap.com/">
+          abelcorrea.com</a>
+      </div>
+      <!-- Copyright -->
+    </div>
+
+  </footer>
+  <!-- Footer -->
+  <!--             Fin Footer                 -->
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
 </html>

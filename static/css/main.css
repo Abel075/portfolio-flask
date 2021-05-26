@@ -7,15 +7,28 @@ body {
     overflow-x: hidden;
     font-family: 'Lato', sans-serif;
 }
+.navbar-toggler:hover {
+    color: #1ebba3;
+
+}
+
+.offset::before {
+    display: block;
+    content: "";
+    height: 6rem;
+
+
+}
 
 .navbar {
-     text-transform: uppercase;
-     font-size: 14px;
-     font-weight: 700;
-     letter-spacing: 0.2rem;
-     background: rgba(0,0,0,0.6) !important;
-     padding: 20px 0;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+    background: rgba(0, 0, 0, 0.6) !important;
+    padding: 20px 0;
 }
+
 .navbar-dark .navbar-nav .nav-link {
     color: #fff;
     padding-left: 20px;
@@ -42,9 +55,9 @@ body {
 }
 
 .heading-content h1 {
-    font-size: 5em;
+    font-size: 4em;
     font-weight: bolder;
-    color: #fff;
+    color: #1ebba3;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -52,52 +65,160 @@ body {
     font-size: 1em;
     text-transform: uppercase;
     font-weight: lighter;
-    color: #1ebba3;
+    color: rgb(245, 7, 7);
     word-spacing: 5px;
     letter-spacing: 2px;
 }
 
 /*                     Inicio About            */
 
-#about .btn{
-    border:2px solid transparent ;
+#about .btn {
+    border: 2px solid transparent;
     width: 40%;
     padding: 15px 22px;
     background: #000;
     border-radius: 5px;
     margin-top: 10px;
 }
-#about .btn a{
+
+#about .btn a {
     color: #fff;
     text-decoration: none;
     font-size: 1em;
     font-weight: bold;
     text-transform: uppercase;
 }
-#about .btn:hover{
+
+#about .btn:hover {
     border: 2px solid #1ebba3;
     cursor: pointer;
 }
 
 /*                     Inicio Service            */
 
-#service .button{
-    border:2px solid transparent ;
+#service .button {
+    border: 2px solid transparent;
     width: 40%;
     padding: 15px 22px;
     background: #000;
     border-radius: 5px;
     margin-top: 10px;
 }
-#service .button a{
+
+#service .button a {
     color: #fff;
     text-decoration: none;
     font-size: 1em;
     font-weight: bold;
     text-transform: uppercase;
 }
-#service .button:hover{
+
+#service .button:hover {
     border: 2px solid #1ebba3;
     cursor: pointer;
+
+}
+/*           Iconos contacto          */
+.s-ico{
+    color: white;
+}
+
+/*               Media Query          */
+
+@media screen and (max-width:1200px) {
+
+    /*           Tablets          */
+    .navbar {
+
+        letter-spacing: 0.1rem;
+        padding: 10px 0;
+    }
+    .heading-content{
+        position: absolute;
+        top: 40%;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .heading-content h5 {
+        font-size: 2em;
+        
+
+    }
+
+    .heading-content h1 {
+        font-size: 2em;
+
+    }
+
+    .heading-content p {
+        font-size: 0.7em;
+
+    }
+}
+
+@media screen and (max-width:796px) {
+
+    /*           Tablets          */
+    .navbar {
+
+        letter-spacing: 0.1rem;
+        padding: 10px 0;
+    }
+    .heading-content{
+        position: absolute;
+        top: 20%;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .heading-content h5 {
+        font-size: 2em;
+        
+
+    }
+
+    .heading-content h1 {
+        font-size: 2em;
+
+    }
+
+    .heading-content p {
+        font-size: 0.7em;
+
+    }
+}
+
+@media screen and (max-width:556px) {
+
+    /*           Smarthphones          */
+    .navbar {
+
+        letter-spacing: 0.1rem;
+        padding: 1px 0;
+        position:static;
+    }
+    .heading-content{
+        position: absolute;
+        top: 25%;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .heading-content h5 {
+        font-size: 1em;
+
+    }
+
+    .heading-content h1 {
+        font-size: 1em;
+
+    }
+
+    .heading-content p {
+        font-size: 0.5em;
+
+
+    }
 
 }
