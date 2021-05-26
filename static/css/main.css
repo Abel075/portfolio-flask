@@ -42,7 +42,7 @@ body {
 
 .heading-content {
     position: absolute;
-    top: 60%;
+    top: 50%;
     width: 100%;
     max-width: 100%;
 }
@@ -50,14 +50,14 @@ body {
 .heading-content h5 {
     font-size: 3em;
     font-weight: 300;
-    color: #1ebba3;
+    color: rgb(245, 7, 7);
     font-family: monospace;
 }
 
 .heading-content h1 {
     font-size: 4em;
     font-weight: bolder;
-    color: #1ebba3;
+    color: rgb(245, 7, 7);
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -135,7 +135,7 @@ body {
     }
     .heading-content{
         position: absolute;
-        top: 40%;
+        top: 45%;
         width: 100%;
         max-width: 100%;
     }
@@ -167,7 +167,7 @@ body {
     }
     .heading-content{
         position: absolute;
-        top: 20%;
+        top: 30%;
         width: 100%;
         max-width: 100%;
     }
